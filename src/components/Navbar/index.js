@@ -5,28 +5,22 @@ export class index extends Component {
     return (
       <div>
         <nav className='navbar navbar-expand-lg navbar-light bg-light'>
-          <button
-            className='navbar-toggler'
-            type='button'
-            data-toggle='collapse'
-            data-target='#navbarSupportedContent'
-            aria-controls='navbarSupportedContent'
-            aria-expanded='false'
-            aria-label='Toggle navigation'
-          >
-            <span className='navbar-toggler-icon' />
-          </button>
           <div className='collapse navbar-collapse' id='navbarSupportedContent'>
             <ul className='navbar-nav mr-auto'>
               <li className='nav-item active'>
-                <a className='nav-link' href='#'>
-                  Home <span className='sr-only'>(current)</span>
-                </a>
+                <button>
+                  <a className='nav-link' href='#'>
+                    <i class='fas fa-home' />
+                  </a>
+                </button>
               </li>
               <li className='nav-item'>
-                <a className='nav-link' href='#'>
-                  Link
-                </a>
+                <button>
+                  <a className='nav-link' href='#'>
+                    <i class='fab fa-trello' />
+                    Boards
+                  </a>
+                </button>
               </li>
               <li>
                 <form className='form-inline my-2 my-lg-0'>
@@ -69,20 +63,39 @@ export class index extends Component {
                   </a>
                 </div>
               </li>
-              <li className='nav-item'>
-                <a
-                  className='nav-link disabled'
-                  href='#'
-                  tabindex='-1'
-                  aria-disabled='true'
-                >
-                  Disabled
-                </a>
-              </li>
               <li>
                 <a className='navbar-brand' href='#'>
+                  <i class='fab fa-trello' />
                   Trello
                 </a>
+              </li>
+              <li className='nav-item'>
+                <button>
+                  <a className='nav-link create' href='#'>
+                    <i class='fas fa-plus' />
+                  </a>
+                </button>
+              </li>
+              <li className='nav-item'>
+                <button>
+                  <a className='nav-link info' href='#'>
+                    <i class='fas fa-info-circle' />
+                  </a>
+                </button>
+              </li>
+              <li className='nav-item'>
+                <button>
+                  <a className='nav-link notifications' href='#'>
+                    <i class='far fa-bell' />
+                  </a>
+                </button>
+              </li>
+              <li className='nav-item'>
+                <button>
+                  <a className='nav-link user' href='#'>
+                    <i class='far fa-user' />
+                  </a>
+                </button>
               </li>
             </ul>
           </div>
