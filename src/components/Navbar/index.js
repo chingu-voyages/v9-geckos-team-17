@@ -15,11 +15,52 @@ export class index extends Component {
                   </a>
                 </button>
               </li>
-              <li className='nav-item'>
+              <li class='nav-item dropdown'>
                 <button>
-                  <a className='nav-link' href='#'>
+                  <a
+                    class='nav-link'
+                    href='#'
+                    id='navbarDropdown'
+                    role='button'
+                    data-toggle='dropdown'
+                    aria-haspopup='true'
+                    aria-expanded='false'
+                  >
                     <i class='fab fa-trello' /> Boards
                   </a>
+                  <div class='dropdown-menu' aria-labelledby='navbarDropdown'>
+                    <a class='dropdown-item' href='#'>
+                      <form className='form-inline my-2 my-lg-0'>
+                        <input
+                          className='form-control mr-sm-2'
+                          type='search'
+                          placeholder='Search'
+                          aria-label='Search'
+                        />
+                        <button
+                          className='btn btn-outline-dark my-2 my-sm-0'
+                          type='submit'
+                          text='Find boards by name...'
+                        >
+                          Search
+                        </button>
+                      </form>
+                    </a>
+                    <a class='dropdown-item' href='#'>
+                      <h6>Create Team...</h6>
+                      <p>
+                        A team is a group of boards and people. Use it to
+                        organize your company, side hustle, family, or friends.
+                      </p>
+                    </a>
+                    <a class='dropdown-item' href='#'>
+                      <h6>Create Business Team...</h6>
+                      <p>
+                        With Business Class your team has more security,
+                        administrative controls, and unlimited Power-Ups.
+                      </p>
+                    </a>
+                  </div>
                 </button>
               </li>
               <li>
@@ -31,40 +72,13 @@ export class index extends Component {
                     aria-label='Search'
                   />
                   <button
-                    className='btn btn-outline-success my-2 my-sm-0'
+                    className='btn btn-outline-dark my-2 my-sm-0'
                     type='submit'
                   >
                     Search
                   </button>
                 </form>
               </li>
-              {/* <li class='nav-item dropdown'>
-                <button>
-                  <a
-                    class='nav-link'
-                    href='#'
-                    id='navbarDropdown'
-                    role='button'
-                    data-toggle='dropdown'
-                    aria-haspopup='true'
-                    aria-expanded='false'
-                  >
-                    Dropdown
-                  </a>
-                  <div class='dropdown-menu' aria-labelledby='navbarDropdown'>
-                    <a class='dropdown-item' href='#'>
-                      Action
-                    </a>
-                    <a class='dropdown-item' href='#'>
-                      Another action
-                    </a>
-                    <div class='dropdown-divider' />
-                    <a class='dropdown-item' href='#'>
-                      Something else here
-                    </a>
-                  </div>
-                </button>
-              </li> */}
               <li>
                 <a className='navbar-brand' href='#'>
                   <i class='fab fa-trello' /> Trello
