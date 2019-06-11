@@ -9,3 +9,15 @@ button {
   /* font-family: 'Cedarville Cursive', cursive; */
   /* font-family: 'Pacifico', cursive; */
 }
+
+.notifications i {
+  transform: rotate(45deg);
+}
+
+.notifications button {
+  background: skyblue;
+}
+
+.user button {
+  border-radius: 50%;
+}

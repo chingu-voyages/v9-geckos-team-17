@@ -192,7 +192,7 @@ export class index extends Component {
                   </div>
                 </button>
               </li>
-              <li className='nav-item dropdown users'>
+              <li className='nav-item dropdown user'>
                 <button>
                   <a
                     className='nav-link'
