@@ -46,8 +46,8 @@ border-radius: 5px;
   background-color: #e8e8e8;
 
 }
-.main-card {
-  color: aliceblue;
+.main-card-row:first-child {
+  background-color: red;
 }
 .card-row {
   margin-bottom: 5%;

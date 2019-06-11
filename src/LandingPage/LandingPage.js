@@ -22,7 +22,7 @@ const landingPage = (props) =>{
           <Row className='card-heading'>
             <Headings heading='Personal Board'> </Headings>
           </Row>
-          <Row className='card-row'>
+          <Row className='card-row main-card-row'>
             <Card cardName='Untitled board ' className='main-card'/>
             <Card cardName='create board'/>
           </Row>
