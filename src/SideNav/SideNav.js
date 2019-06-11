@@ -2,19 +2,13 @@ import React from 'react';
 import NavItem from '../NavItem/NavItem'
 
 const sideNav = (props) =>(
-  <div>
-    <nav>
-      <a href="https://trello.com">
-        <NavItem navName= 'Boards'/>
-      </a>
-      <a href="https://trello.com">
-        <NavItem navName= 'Home'/>
-      </a>
-      <a href="https://trello.com">
-        <NavItem navName= 'Teams'/>
-      </a>
+  <>
+    <nav className="side-nav">
+       <NavItem src ='https://trello.com' navName= 'Boards'/>
+       <NavItem src ='https://trello.com' navName= 'Home'/>
+       <NavItem src ='https://trello.com' navName= 'Teams'/>
     </nav>
-  </div>
+  </>
 )
 
 export default sideNav;

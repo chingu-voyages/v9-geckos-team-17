@@ -1,7 +1,7 @@
 import React from 'react'
 const card = (props) =>(
   <div className="card">
-    <p>{props.cardName}</p>
+    <a href={props.src}> {props.cardName}</a>
   </div>
 )
 
