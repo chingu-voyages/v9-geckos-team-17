@@ -40,11 +40,8 @@ export class index extends Component {
                           placeholder='Find boards by name...'
                           aria-label='Search'
                         />
-                        <button
-                          className='btn btn-outline-dark my-2 my-sm-0'
-                          type='submit'
-                        >
-                          Search
+                        <button className='btn btn-outline-dark' type='submit'>
+                          <i class='fas fa-search' />
                         </button>
                       </form>
                     </a>
@@ -66,19 +63,19 @@ export class index extends Component {
                 </button>
               </li>
               <li className='search'>
-                <form className='form-inline my-2 my-lg-0'>
+                <form className='form-inline my-5 my-lg-0'>
                   <input
-                    className='form-control mr-sm-2'
+                    className='form-control mr-sm-2 mt-1'
                     type='search'
                     placeholder='Search'
                     aria-label='Search'
                   />
-                  <button
+                  {/* <button
                     className='btn btn-outline-dark my-2 my-sm-0'
                     type='submit'
                   >
                     <i class='fas fa-search' />
-                  </button>
+                  </button> */}
                 </form>
               </li>
               <li className='trello'>

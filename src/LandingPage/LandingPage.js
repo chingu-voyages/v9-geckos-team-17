@@ -3,7 +3,6 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 // import Button from 'react-bootstrap/Button'
-import Navbar from '../components/Navbar/index';
 import SideNav from '../SideNav/SideNav';
 import Card from '../Card/Card';
 import Headings from '../Headings/Headings';
@@ -11,7 +10,6 @@ import Headings from '../Headings/Headings';
 const landingPage = props => {
   return (
     <div>
-      <Navbar />
       <Container className='landing-page-container'>
         <Row className='main-content'>
           <Col className='side-nav-col'>
