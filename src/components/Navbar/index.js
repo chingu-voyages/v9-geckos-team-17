@@ -77,7 +77,7 @@ export class index extends Component {
                     className='btn btn-outline-dark my-2 my-sm-0'
                     type='submit'
                   >
-                    Search
+                    <i class='fas fa-search' />
                   </button>
                 </form>
               </li>
