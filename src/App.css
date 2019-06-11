@@ -15,10 +15,14 @@
 }
 .nav-item{
   width: 100%;
-  /* background-color: red; */
+  
   margin:2px;
   font-weight: bold;
 }
+.nav-item:first-child{
+background-color: #61b3f52b;
+}
+
 .card-col{
   display: inherit;
   flex-direction: column;
@@ -29,13 +33,17 @@
   font-weight: bold;
 }
 .card{
-  width: 200px;
+  width: 250px;
   height: 100px;
   text-align: center;
+  font-weight: bold;
   padding: 5%;
   margin-right: 2%; 
   background-color: lightgray;
 
+}
+.main-card {
+  color: aliceblue;
 }
 .card-row {
   margin-bottom: 5%;
