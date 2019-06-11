@@ -8,6 +8,7 @@ button {
   border-radius: 5px;
   margin-right: 5px;
   padding: 0 3px;
+  border: none;
 }
 
 .boards button {
@@ -16,6 +17,7 @@ button {
 
 .trello {
   font-family: 'Lobster', cursive;
+  margin-right: 180px;
   /* font-family: 'Cedarville Cursive', cursive; */
   /* font-family: 'Pacifico', cursive; */
 }

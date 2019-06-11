@@ -63,26 +63,24 @@ export class index extends Component {
                 </button>
               </li>
               <li className='search'>
-                <form className='form-inline my-5 my-lg-0'>
+                <form className='form-inline my-1 my-lg-1'>
                   <input
-                    className='form-control mr-sm-2 mt-1'
+                    className='form-control mr-sm-2'
                     type='search'
                     placeholder='Search'
                     aria-label='Search'
                   />
-                  {/* <button
-                    className='btn btn-outline-dark my-2 my-sm-0'
-                    type='submit'
-                  >
-                    <i class='fas fa-search' />
-                  </button> */}
                 </form>
               </li>
+            </ul>
+            <ul className='navbar-nav mr-auto'>
               <li className='trello'>
                 <a className='navbar-brand' href='#'>
                   <i className='fab fa-trello' /> Trello
                 </a>
               </li>
+            </ul>
+            <ul className='navbar-nav mr-1'>
               <li className='nav-item dropdown create'>
                 <button>
                   <a

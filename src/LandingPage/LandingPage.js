@@ -10,7 +10,7 @@ import Headings from '../Headings/Headings';
 const landingPage = props => {
   return (
     <div>
-      <Container className='landing-page-container'>
+      <Container className='landing-page-container mt-5'>
         <Row className='main-content'>
           <Col className='side-nav-col'>
             <SideNav />
