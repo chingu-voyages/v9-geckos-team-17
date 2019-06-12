@@ -1,0 +1,35 @@
+nav {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  border-radius: 5px;
+  margin-right: 5px;
+  padding: 0 3px;
+  border: none;
+}
+
+.boards button {
+  width: 100px;
+}
+
+.trello {
+  font-family: 'Lobster', cursive;
+  margin-right: 180px;
+  /* font-family: 'Cedarville Cursive', cursive; */
+  /* font-family: 'Pacifico', cursive; */
+}
+
+.notifications i {
+  transform: rotate(45deg);
+}
+
+.notifications button {
+  background: skyblue;
+}
+
+.user button {
+  border-radius: 50%;
+}
