@@ -20,6 +20,7 @@
   margin:2px;
   font-weight: bold;
   padding: 5px;
+  text-align: left;
 
 }
 .nav-item:first-child{
