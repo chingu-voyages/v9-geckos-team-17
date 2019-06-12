@@ -5,15 +5,12 @@ import Col from 'react-bootstrap/Col';
 // import Button from 'react-bootstrap/Button'
 import SideNav from '../SideNav/SideNav';
 import Card from '../Card/Card';
-import Headings from '../Headings/Headings'
+import Headings from '../Headings/Headings';
 
-const landingPage = (props) =>{
-  return(
+const landingPage = props => {
+  return (
     <div>
-      <Container className='landing-page-container'>
-      <Row>
-        <nav>Navbar Here</nav>
-      </Row>
+      <Container className='landing-page-container mt-5'>
       <Row className='main-content'>
         <Col className='side-nav-col'>
           <SideNav/>
@@ -36,6 +33,6 @@ const landingPage = (props) =>{
       </Row>
       </Container>
     </div>
-  )
-}
-export default landingPage
+  );
+};
+export default landingPage;
