@@ -9,16 +9,25 @@
 }
 .side-nav-col{
   flex-grow: 1;
+  margin-right: 4%;
+
 }
 .side-nav{
   /* border: solid 2px red; */
 }
 .nav-item{
   width: 100%;
-  /* background-color: red; */
   margin:2px;
   font-weight: bold;
+  padding: 5px;
+  text-align: left;
+
 }
+.nav-item:first-child{
+background-color: #61b3f52b;
+border-radius: 5px;
+}
+
 .card-col{
   display: inherit;
   flex-direction: column;
@@ -29,13 +38,17 @@
   font-weight: bold;
 }
 .card{
-  width: 200px;
+  width: 250px;
   height: 100px;
   text-align: center;
+  font-weight: bold;
   padding: 5%;
   margin-right: 2%; 
-  background-color: lightgray;
+  background-color: #e8e8e8;
 
+}
+.main-card-row:first-child {
+  background-color: red;
 }
 .card-row {
   margin-bottom: 5%;
@@ -58,7 +71,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #030e11;
 }
 
 @keyframes App-logo-spin {

@@ -11,26 +11,26 @@ const landingPage = props => {
   return (
     <div>
       <Container className='landing-page-container mt-5'>
-        <Row className='main-content'>
-          <Col className='side-nav-col'>
-            <SideNav />
-          </Col>
-          <Col className='card-col'>
-            <Row className='card-heading'>
-              <Headings heading='Personal Board'> </Headings>
-            </Row>
-            <Row className='card-row'>
-              <Card cardName='Untitled board' />
-              <Card cardName='create board' />
-            </Row>
-            <Row className='card-heading'>
-              <Headings heading='Board Name'> </Headings>
-            </Row>
-            <Row className='card-row'>
-              <Card src='#' cardName='create board' />
-            </Row>
-          </Col>
-        </Row>
+      <Row className='main-content'>
+        <Col className='side-nav-col'>
+          <SideNav/>
+        </Col>
+        <Col className='card-col'>
+          <Row className='card-heading'>
+            <Headings heading='Personal Board'> </Headings>
+          </Row>
+          <Row className='card-row main-card-row'>
+            <Card cardName='Untitled board ' className='main-card'/>
+            <Card cardName='create board'/>
+          </Row>
+          <Row className='card-heading'>
+            <Headings heading='Board Name'> </Headings>
+          </Row>
+          <Row className='card-row'>
+            <Card  src = '#'cardName='create board'/>
+          </Row>
+        </Col>
+      </Row>
       </Container>
     </div>
   );
