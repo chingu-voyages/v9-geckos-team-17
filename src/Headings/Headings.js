@@ -1,7 +1,7 @@
 import React from 'react'
 const headings = (props) =>(
   <div className='headings'>
-    <p>{props.heading}</p>
+    <p><span className='heading-icon icon'> {props.icon}</span>{props.heading}</p>
   </div>
 )
 
