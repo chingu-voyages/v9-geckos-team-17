@@ -20,7 +20,9 @@
   margin:2px;
   font-weight: bold;
   padding: 5px;
-
+}
+.side-nav-icon{
+  margin-right: 10px;
 }
 .nav-item:first-child{
 background-color: #61b3f52b;
