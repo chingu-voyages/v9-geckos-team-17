@@ -23,7 +23,7 @@ const landingPage = props => {
           </Row>
           <Row className='card-row main-card-row'>
             <Card cardName='Untitled board ' className='main-card'/>
-            <Card cardName='create board'/>
+            <Card cardName='Create new board'/>
           </Row>
           <Row className='card-heading'>
             <Headings heading='Board Name' icon={<FontAwesomeIcon icon={faUserFriends} />}/>
