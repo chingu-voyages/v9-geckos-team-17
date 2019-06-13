@@ -14,6 +14,7 @@
 }
 .side-nav{
   /* border: solid 2px red; */
+  text-align: left;
 }
 .nav-item{
   width: 100%;
@@ -22,6 +23,9 @@
   padding: 5px;
   text-align: left;
 
+}
+.icon{
+  margin-right: 10px;
 }
 .nav-item:first-child{
 background-color: #61b3f52b;
