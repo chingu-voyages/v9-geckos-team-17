@@ -3,9 +3,9 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 // import Button from 'react-bootstrap/Button'
-import SideNav from '../../components/SideNav/SideNav';
-import Card from '../../components/Card/Card';
-import Headings from '../../components/Headings/Headings';
+import SideNav from '../components/SideNav/SideNav';
+import Card from '../components/Card/Card';
+import Headings from '../Headings/Headings';
 
 const landingPage = props => {
   return (
