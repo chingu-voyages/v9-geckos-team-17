@@ -5,6 +5,7 @@ import TrelloCreate from './TrelloCreate';
 import { DragDropContext, Droppable } from 'react-beautiful-dnd';
 import styled from 'styled-components';
 import { sort, setActiveBoard } from '../actions';
+import Navbar from '../components/Navbar/index';
 
 const ListsContainer = styled.div`
   display: flex;
@@ -48,36 +49,39 @@ class TrelloBoard extends PureComponent {
     const listOrder = board.lists;
 
     return (
-      <DragDropContext onDragEnd={this.onDragEnd}>
-        <h2>{board.title}</h2>
-        <Droppable droppableId='all-lists' direction='horizontal' type='list'>
-          {provided => (
-            <ListsContainer
-              {...provided.droppableProps}
-              ref={provided.innerRef}
-            >
-              {listOrder.map((listID, index) => {
-                const list = lists[listID];
-                if (list) {
-                  const listCards = list.cards.map(cardID => cards[cardID]);
+      <div>
+        <Navbar />
+        <DragDropContext onDragEnd={this.onDragEnd}>
+          <h2>{board.title}</h2>
+          <Droppable droppableId='all-lists' direction='horizontal' type='list'>
+            {provided => (
+              <ListsContainer
+                {...provided.droppableProps}
+                ref={provided.innerRef}
+              >
+                {listOrder.map((listID, index) => {
+                  const list = lists[listID];
+                  if (list) {
+                    const listCards = list.cards.map(cardID => cards[cardID]);
 
-                  return (
-                    <TrelloList
-                      listID={list.id}
-                      key={list.id}
-                      title={list.title}
-                      cards={listCards}
-                      index={index}
-                    />
-                  );
-                }
-              })}
-              {provided.placeholder}
-              <TrelloCreate list />
-            </ListsContainer>
-          )}
-        </Droppable>
-      </DragDropContext>
+                    return (
+                      <TrelloList
+                        listID={list.id}
+                        key={list.id}
+                        title={list.title}
+                        cards={listCards}
+                        index={index}
+                      />
+                    );
+                  }
+                })}
+                {provided.placeholder}
+                <TrelloCreate list />
+              </ListsContainer>
+            )}
+          </Droppable>
+        </DragDropContext>
+      </div>
     );
   }
 }
