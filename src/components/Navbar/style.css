@@ -11,9 +11,9 @@ button {
   border: none;
 }
 
-.boards button {
+/* .boards button {
   width: 100px;
-}
+} */
 
 .trello {
   font-family: 'Lobster', cursive;
