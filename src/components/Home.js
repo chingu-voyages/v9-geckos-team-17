@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { addBoard } from '../actions';
 import BoardThumbnail from './BoardThumbnail';
+import Navbar from './Navbar/index';
 
 const Thumbnails = styled.div`
   flex: 1;
@@ -87,10 +88,13 @@ const Home = ({ boards, boardOrder, dispatch }) => {
   };
 
   return (
-    <HomeContainer>
-      <Thumbnails>{renderBoards()}</Thumbnails>
-      {renderCreateBoard()}
-    </HomeContainer>
+    <div>
+      <Navbar />
+      <HomeContainer>
+        <Thumbnails>{renderBoards()}</Thumbnails>
+        {renderCreateBoard()}
+      </HomeContainer>
+    </div>
   );
 };
 
