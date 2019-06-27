@@ -11,8 +11,6 @@ const ListsContainer = styled.div`
   flex-direction: row;
 `;
 
-// TODO: Fix performance issue
-
 class TrelloBoard extends PureComponent {
   componentDidMount() {
     // set active trello board here
