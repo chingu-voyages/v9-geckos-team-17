@@ -91,11 +91,13 @@ const Home = ({ boards, boardOrder, dispatch }) => {
   return (
     <div>
       <Navbar />
-      <LandingPage />
+      <LandingPage >
+
       <HomeContainer>
         <Thumbnails>{renderBoards()}</Thumbnails>
         {renderCreateBoard()}
       </HomeContainer>
+      </LandingPage>
     </div>
   );
 };

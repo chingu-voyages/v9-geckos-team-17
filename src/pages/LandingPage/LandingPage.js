@@ -8,6 +8,7 @@ import {faUser, faUserFriends} from '@fortawesome/free-solid-svg-icons';
 import SideNav from '../../components/SideNav/SideNav';
 import Card from '../../components/Card/Card';
 import Headings from '../../components/Headings/Headings';
+import Thumbnail from '../../components/BoardThumbnail'
 
 const landingPage = props => {
   return (
@@ -22,19 +23,20 @@ const landingPage = props => {
             <Headings heading='Personal Board' icon={<FontAwesomeIcon icon={faUser} />}/> 
           </Row>
           <Row className='card-row main-card-row'>
-            <Card cardName='Untitled board ' className='main-card'/>
-            <Card cardName='Create new board'/>
+             {props.children}
+            {/* <Card cardName='Untitled board ' className='main-card'/>
+            <Card cardName='Create new board'/> */}
           </Row>
-          <Row className='card-heading'>
+          {/* <Row className='card-heading'>
             <Headings heading='Board Name' icon={<FontAwesomeIcon icon={faUserFriends} />}/>
           </Row>
           <Row className='card-row'>
             <Card  src = '#'cardName='create board'/>
-          </Row>
+          </Row> */}
         </Col>
       </Row>
       </Container>
-    </div>
+    </div> 
   );
 };
 export default landingPage;

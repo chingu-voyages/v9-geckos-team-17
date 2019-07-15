@@ -7,7 +7,7 @@ import {  faPlus, faSignature,} from '@fortawesome/free-solid-svg-icons'
 const sideNav = (props) =>(
   <>
     <nav className="side-nav">
-       <span className='main-nav-item'><NavItem src ='https://trello.com' navName= 'Boards' icon={<FontAwesomeIcon icon={faTrello} />}/></span>
+       <span className='main-nav-item board-nav'><NavItem src ='https://trello.com' navName= 'Boards' icon={<FontAwesomeIcon icon={faTrello} />}/></span>
        <NavItem src ='https://trello.com' navName= 'Home' icon={<FontAwesomeIcon icon={faSignature} />}/>
        <NavItem src ='https://trello.com' navName= 'Teams'icon={<FontAwesomeIcon icon={faPlus} />}/>
     </nav>

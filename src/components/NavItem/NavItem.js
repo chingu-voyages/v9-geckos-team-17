@@ -1,7 +1,7 @@
 import React from 'react';
 
 const navItem = (props) =>(
-  <div className='nav-item'>
+  <div className='navi-item'>
     <a href={props.src} className={props.className}>{props.icon}{props.navName}</a>
   </div>
 )
