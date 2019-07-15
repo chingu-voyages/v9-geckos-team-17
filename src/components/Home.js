@@ -24,10 +24,12 @@ const HomeContainer = styled.div`
   box-sizing: border-box;
 `;
 
-const CreateTitle = styled.h3`
-  font-size: 48px;
-  color: white;
-  font-weight: bold;
+const CreateTitle = styled.h4`
+  font-size: 18px;
+  text-align: left;
+  color: #212529;
+  font-weight: 600;
+  margin-bottom:20px;
   font-family: Arial, Helvetica, sans-serif;
 `;
 
@@ -42,6 +44,7 @@ const CreateInput = styled.input`
   outline-color: blue;
   box-shadow: 0 2px 4px grey;
   align-self: center;
+  background-color: #e8e8e8;
 `;
 
 const Home = ({ boards, boardOrder, dispatch }) => {
@@ -81,7 +84,7 @@ const Home = ({ boards, boardOrder, dispatch }) => {
         <CreateInput
           onChange={handleChange}
           value={newBoardTitle}
-          placeholder='Your boards title...'
+          placeholder='Enter title...'
           type='text'
         />
       </form>
@@ -91,11 +94,11 @@ const Home = ({ boards, boardOrder, dispatch }) => {
   return (
     <div>
       <Navbar />
-      <LandingPage >
+      <LandingPage createBoard={renderCreateBoard()} >
 
       <HomeContainer>
         <Thumbnails>{renderBoards()}</Thumbnails>
-        {renderCreateBoard()}
+        
       </HomeContainer>
       </LandingPage>
     </div>

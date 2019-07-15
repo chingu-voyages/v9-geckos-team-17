@@ -28,11 +28,12 @@ const landingPage = props => {
             <Card cardName='Create new board'/> */}
           </Row>
           {/* <Row className='card-heading'>
-            <Headings heading='Board Name' icon={<FontAwesomeIcon icon={faUserFriends} />}/>
-          </Row>
-          <Row className='card-row'>
-            <Card  src = '#'cardName='create board'/>
+            <Headings heading='Create New Board' icon={<FontAwesomeIcon icon={faUserFriends} />}/>
           </Row> */}
+          <Row className='card-row'>
+            {/* <Card  src = '#'cardName='create board'/> */}
+            {props.createBoard}
+          </Row>
         </Col>
       </Row>
       </Container>
