@@ -76,7 +76,7 @@ export class index extends Component {
             <ul className='navbar-nav mr-auto'>
               <li className='trello'>
                 <a className='navbar-brand' href='#'>
-                  <i className='fab fa-trello' /> Trello
+                  <i className='fab fa-trello' /> Clonello
                 </a>
               </li>
             </ul>
