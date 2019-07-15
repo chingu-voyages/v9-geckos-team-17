@@ -34,8 +34,8 @@ const CreateTitle = styled.h4`
 `;
 
 const CreateInput = styled.input`
-  width: 400px;
-  height: 80px;
+  width: 350px;
+  height: 120px;
   font-size: 22px;
   padding: 10px;
   box-sizing: border-box;
@@ -44,7 +44,7 @@ const CreateInput = styled.input`
   outline-color: blue;
   box-shadow: 0 2px 4px grey;
   align-self: center;
-  background-color: #e8e8e8;
+  background-color: #f2efef
 `;
 
 const Home = ({ boards, boardOrder, dispatch }) => {
