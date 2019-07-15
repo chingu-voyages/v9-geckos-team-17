@@ -5,9 +5,9 @@ import Col from 'react-bootstrap/Col';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faUser, faUserFriends} from '@fortawesome/free-solid-svg-icons';
 // import Button from 'react-bootstrap/Button'
-import SideNav from '../SideNav/SideNav';
-import Card from '../Card/Card';
-import Headings from '../Headings/Headings';
+import SideNav from '../../components/SideNav/SideNav';
+import Card from '../../components/Card/Card';
+import Headings from '../../components/Headings/Headings';
 
 const landingPage = props => {
   return (
