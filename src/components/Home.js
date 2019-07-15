@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import { addBoard } from '../actions';
 import BoardThumbnail from './BoardThumbnail';
 import Navbar from './Navbar/index';
+import LandingPage from '../pages/LandingPage/LandingPage'
 
 const Thumbnails = styled.div`
   flex: 1;
@@ -90,6 +91,7 @@ const Home = ({ boards, boardOrder, dispatch }) => {
   return (
     <div>
       <Navbar />
+      <LandingPage />
       <HomeContainer>
         <Thumbnails>{renderBoards()}</Thumbnails>
         {renderCreateBoard()}
