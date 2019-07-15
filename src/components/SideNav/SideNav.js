@@ -1,4 +1,5 @@
 import React from 'react';
+<<<<<<< HEAD
 import NavItem from '../NavItem/NavItem'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTrello } from '@fortawesome/free-brands-svg-icons'
@@ -15,3 +16,20 @@ const sideNav = (props) =>(
 )
 
 export default sideNav;
+=======
+import NavItem from '../NavItem/NavItem';
+
+const sideNav = props => (
+  <>
+    <nav className='side-nav'>
+      <span className='main-nav-item'>
+        <NavItem src='https://trello.com' navName='Boards' />
+      </span>
+      <NavItem src='https://trello.com' navName='Home' />
+      <NavItem src='https://trello.com' navName='Teams' />
+    </nav>
+  </>
+);
+
+export default sideNav;
+>>>>>>> tom
