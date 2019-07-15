@@ -5,9 +5,10 @@ import Col from 'react-bootstrap/Col';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faUser, faUserFriends} from '@fortawesome/free-solid-svg-icons';
 // import Button from 'react-bootstrap/Button'
-import SideNav from '../SideNav/SideNav';
-import Card from '../Card/Card';
-import Headings from '../Headings/Headings';
+import SideNav from '../../components/SideNav/SideNav';
+import Card from '../../components/Card/Card';
+import Headings from '../../components/Headings/Headings';
+import Thumbnail from '../../components/BoardThumbnail'
 
 const landingPage = props => {
   return (
@@ -22,19 +23,21 @@ const landingPage = props => {
             <Headings heading='Personal Board' icon={<FontAwesomeIcon icon={faUser} />}/> 
           </Row>
           <Row className='card-row main-card-row'>
-            <Card cardName='Untitled board ' className='main-card'/>
-            <Card cardName='create board'/>
+             {props.children}
+            {/* <Card cardName='Untitled board ' className='main-card'/>
+            <Card cardName='Create new board'/> */}
           </Row>
-          <Row className='card-heading'>
-            <Headings heading='Board Name' icon={<FontAwesomeIcon icon={faUserFriends} />}/>
-          </Row>
+          {/* <Row className='card-heading'>
+            <Headings heading='Create New Board' icon={<FontAwesomeIcon icon={faUserFriends} />}/>
+          </Row> */}
           <Row className='card-row'>
-            <Card  src = '#'cardName='create board'/>
+            {/* <Card  src = '#'cardName='create board'/> */}
+            {props.createBoard}
           </Row>
         </Col>
       </Row>
       </Container>
-    </div>
+    </div> 
   );
 };
 export default landingPage;
